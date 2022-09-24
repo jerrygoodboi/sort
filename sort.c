@@ -2,7 +2,8 @@
 #include <stdio.h>
 int main()
 {
-	    int n,i,j=0,temp;
+int n,i,j=0,temp;
+
 	        printf("Enter the size of array: ");
 		    scanf("%d",&n);
 		        int *ar=(int *)malloc(n*sizeof(int));
@@ -27,5 +28,6 @@ int main()
 				    for(i=1;i<=n;++i){
 					            printf("%d ",*(ar+i));
 						        }
+free(ar);
 }
 
